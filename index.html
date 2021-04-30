@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<title>counter up</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- fontwesome icon link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <!-- jquery cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+
+  <!-- counterup code -->
+  <script>
+    $(document).ready(function() {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+  </script>
+
+</head>
+<body>
+
+  <div class="main">
+
+     <div class="box">
+     	<p class="counter">1200</p>
+
+     	  <div class="info">
+   	         <p><i class="fa fa-eye" aria-hidden="true"></i></p>
+          </div>
+     </div>
+     <div class="box">
+     	<p class="counter">150</p>
+
+     	  <div class="info">
+   	         <p><i class="fa fa-envelope" aria-hidden="true"></i></p>
+          </div>  
+     </div>
+     <div class="box">
+     	<p class="counter">850</p>
+
+     	  <div class="info">
+   	         <p><i class="fa fa-heart" aria-hidden="true"></i></p>
+          </div>  
+     </div>
+
+   </div>
+   
+
+    <!-- waypoint cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.js"></script>
+    
+    <!-- counterup cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" ></script>
+
+
+</body>
+</html>

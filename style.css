@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: #ECF0F1;
+}
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+}
+
+/*box part*/
+.box{
+   width: 30%;
+   height: 250px;
+   display: grid;
+   place-items: center;
+   cursor: pointer; 
+   position: relative;
+   border-radius: 10px;
+   transition: 0.5s;
+   box-shadow: 0.1px 4px 20px 8px rgba(0,0,0,0.18);
+}
+
+/*three box colors*/
+.main .box:nth-child(1){
+   background: linear-gradient( to right , #EC407A, #F48FB1);
+}
+.main .box:nth-child(2){
+   background: linear-gradient( to right , #8E44AD, #BB8FCE);
+}
+.main .box:nth-child(3){
+   background: linear-gradient( to right , #16A085, #58D68D);
+}
+
+
+.box p{
+	font-size: 5em;
+	color: #fff;
+}
+.box:hover{
+   transform: translateY(-7px);
+}
+
+
+/*top icon part*/
+.info{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	background: rgba(245,245,245,0.2);
+}
+.info p{
+	font-size: 1.3em;
+}
+
+
+
+/*for responsive*/
+@media(max-width: 900px){
+	.main{
+		flex-direction: column;
+	}
+	.box{
+		width: 80%;
+		margin: 20px 0;
+	}
+}
